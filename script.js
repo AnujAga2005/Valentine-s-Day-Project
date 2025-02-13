@@ -14,21 +14,21 @@ function animateonce(){
     gsap.to('.cover-right',{zIndex:1 , duration:1,delay:0})
     gsap.to('.cover',{zIndex:1 , duration:1,delay:3})
     gsap.to('.card',{boxShadow: '-5px -5px 8px rgba(0, 0, 0, 0.559)', duration:1,delay:3})
-    new Audio("pika-prop-sound.mp3").play();
+    new Audio("./assets/sounds/pika-prop-sound.mp3").play();
 }
 let noClicks = -1;
 const maxGifNoClicks = 3;
 let gif = document.getElementById("pikachu-propose");
 const yesButton = document.getElementById("yes");
 const noButton = document.getElementById("no");
-const gifs = ["pikachu-sad.jpg","pikachu-very-sad.gif","pikachu-very-very-sad.gif"];
+const gifs = ["./assets/images/pikachu-sad.jpg","./assets/images/pikachu-very-sad.gif","./assets/images/pikachu-very-very-sad.gif"];
 const messages = ["Please." , "I will be really sad." , "Pookie PLEASE."]
-const nobuttonaudio = ["pikachucry1.mp3" , "pikachu-cry2.mp3" , "pikachu-cry3.mp3" ];
+const nobuttonaudio = ["./assets/sounds/pikachucry1.mp3" , "./assets/sounds/pikachu-cry2.mp3" , "./assets/sounds/pikachu-cry3.mp3" ];
 let message = document.getElementById("text")
 yesButton.addEventListener("click",()=>{
-    gif.src= "pikachu-happy.gif";
+    gif.src= "./assets/images/pikachu-happy.gif";
     message.innerHTML = "Yayyyy!";
-    new Audio("pikachu-happy.mp3").play();
+    new Audio("./assets/sounds/pikachu-happy.mp3").play();
     yesButton.parentNode.removeChild(yesButton);
     noButton.parentNode.removeChild(noButton);
 })
