@@ -6,16 +6,13 @@
     justify-content: center;
     align-items: center;
 }
-
 .buttons{
-    
     margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     cursor: pointer;
-    
 }
 .text{
     font-style: italic;
@@ -59,7 +56,6 @@
     justify-content:left;
     align-items: center;
     z-index: 4;
-    
 }
 .cover-left{
     height: 0;
@@ -86,54 +82,6 @@
     cursor: pointer;
     transition: all 1s ;
     transform-origin: top;
-    
-}
-envelope:hover{
-    animation: open 1s linear forwards , fall 0.2s 2s linear forwards;
-    -webkit-animation: open 1s linear forwards , fall 0.2s 2s linear forwards;
-}
-envelope:hover ~ .cover{
-    animation: fall 0.2s 2s linear forwards;
-    -webkit-animation: fall 0.2s 2s linear forwards;
-}
-envelope:hover ~ .card{
-    animation: show 2s 1s  linear forwards;
-    -webkit-animation: show 2s 1s  linear forwards;
-}
-@keyframes fall {
-    to{
-        opacity: 0%;
-        z-index: 1;
-}
-}
-@keyframes show{
-    0%{
-}
-    50%{
-        transform: translateY(-100px);
-        -webkit-transform: translateY(-100px);
-        -moz-transform: translateY(-100px);
-        -ms-transform: translateY(-100px);
-        -o-transform: translateY(-100px);
-}
-100%{
-    transform: translateY(0px);
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -o-transform: translateY(0px);
-}
-}
-
-@keyframes open {
-    to{
-        transform: rotateX(180deg);
-        -webkit-transform: rotateX(180deg);
-        -moz-transform: rotateX(180deg);
-        -ms-transform: rotateX(180deg);
-        -o-transform: rotateX(180deg);
-        z-index: 1;
-}
 }
 .card {
     position: absolute;
@@ -153,10 +101,8 @@ envelope:hover ~ .card{
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    
 }
 .rsheart{
-    
     -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
@@ -164,7 +110,7 @@ envelope:hover ~ .card{
     width: 50%;
     height: 50%;
 }
-footer{
+header{
     background-color: black;
     color: wheat;
 }
